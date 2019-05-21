@@ -1,0 +1,120 @@
+/* pages/myCar/add/add.wxss */
+
+/* 键盘 */
+
+.fl {
+  float: left;
+}
+
+.carDrivingLicenseId {
+  text-align: center;
+  height: 88rpx;
+}
+
+.tel {
+  border-bottom: 2rpx solid #ddd;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.chepai {
+  height: 200rpx;
+  line-height: 200rpx;
+}
+
+.provinces {
+  overflow: hidden;
+  padding: 30rpx 0;
+  /* position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10000; */
+}
+
+.pro-li {
+  font-size: 32rpx;
+  color: #353535;
+  height: 76rpx;
+  width: 62rpx;
+  line-height: 76rpx;
+  text-align: center;
+  margin-left: 12rpx;
+  margin-bottom: 20rpx;
+  background-color: #eee;
+  box-shadow: 0 1rpx 2rpx 0 #ccd2e3;
+  border-radius: 5rpx;
+}
+
+/* .provinces .pro-li:nth-child(11),
+  .provinces .pro-li:nth-child(20),
+  .provinces .pro-li:nth-child(29){
+    margin-left: 48rpx
+  }
+  .keyNums .pro-li:nth-child(11),
+  .keyNums .pro-li:nth-child(20){
+    margin-left: 48rpx
+  } */
+
+.pro-close {
+  width: 100rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  text-align: center;
+  background-color: #fff;
+  border: 2rpx solid #ddd;
+  margin: 5rpx;
+}
+
+.pro-del {
+  width: 100rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  text-align: center;
+  background-color: #fff;
+  border: 2rpx solid #ddd;
+  margin: 5rpx;
+}
+
+.keyNums {
+  overflow: hidden;
+  padding: 30rpx 0;
+  /* position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10000; */
+}
+
+.pro-ok {
+  width: 100rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  text-align: center;
+  background-color: #fff;
+  border: 2rpx solid #ddd;
+  margin: 5rpx;
+  /* margin-left: 35%; */
+}
+
+.pro-d {
+  width: 100rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  text-align: center;
+  background-color: #fff;
+  border: 2rpx solid #ddd;
+  margin: 5rpx;
+}
+
+.keyNums .bot .kb-del {
+  margin-left: 12rpx;
+}
+
+.keyNums .bot .kb-icon {
+  width: 104rpx;
+  height: 76rpx;
+  background: #ccc;
+}

@@ -1,0 +1,29 @@
+/* pages/myorder/index.wxss */
+.picker{
+  height: 80px;
+  display: flex;
+  flex-direction:row-reverse;
+}
+
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(215, 215, 215)
+}
+
+.time {
+}
+
+.content {
+  height: 30px;
+  font-size: 13px;
+  color: rgb(215, 215, 215);
+  display: flex;
+
+}
+
+.money {
+  display: flex;
+  justify-content: first baseline;
+}

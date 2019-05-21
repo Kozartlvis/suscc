@@ -1,0 +1,26 @@
+<view class="info">
+<view class="xian"></view>
+<view class="txt"><text>已预订车位信息： </text></view>
+<view class="txt"><text>{{parkname}}商业车库车位 </text></view>
+<view class="txt"><text>将为您保留15分钟</text></view>
+<view class="txt"><text>保留15分钟后若无进一步操作，自动取消预订</text></view>
+<view class="txt"><text>距离取消车位还剩：</text></view>
+<view class="txt" hidden='{{hidetime}}'><text>{{hhh}}:{{mmm}}:{{sss}}</text></view>
+<view class="txt" hidden="{{hide}}"><text>已超时</text></view>
+</view>
+<view class="xian" style=' margin-top: 50rpx'></view>
+<view>
+<button bindtap='startcharging' disabled='{{btn_dis}}'>开始计费</button>
+<button bindtap="indoor">进门二维码</button>
+<button bindtap="naviagtor">导航</button>
+</view>
+<view class="modal-box" hidden="{{flag}}" bindtap="hideQR">
+      <view class="modal-content">
+       <canvas class='canvas' style="width:{{code_w}}px; height:{{code_w}}px;" canvas-id='canvas' bindlongtap='save'></canvas>
+      </view>
+      <view>
+       <button class="knowBtn" bindtap="hideQR">确定</button>
+      </view>
+ </view>
+
+

@@ -1,0 +1,50 @@
+/* pages/index/first/first.wxss */
+@import "/weui.wxss";
+page{  
+  display: flex;  
+  flex-direction: column;  
+  height: 100%;  
+}  
+.navbar{  
+  flex: none;  
+  display: flex;  
+  background: #fff;  
+}  
+.navbar .item{  
+  position: relative;  
+  flex: auto;  
+  text-align: center;  
+  line-height: 100rpx;  
+  font-size:14px;
+}  
+/* 顶部导航字体颜色
+.navbar .item.active{  
+  color:	rgb(2, 250, 250);  
+}  
+/* 顶部指示条属性 
+.navbar .item.active:after{  
+  content: "";  
+  display: block;  
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  height: 6rpx;  
+  background:		rgb(2, 250, 250);  
+}  */
+.useravatar{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+}
+.swiper-item{
+  height: 150px;
+  margin: 10px;
+}
+.scroll{
+  height: 90%;
+}
+.title{
+  text-align: center;
+}

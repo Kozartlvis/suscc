@@ -1,0 +1,49 @@
+page{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(	#87CEEB, 	#87CEFA);
+}
+.changeInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  margin: 50rpx auto;
+}
+.changeInfoName{
+  position: relative;
+  height: 80rpx;
+  width: 100%;
+  border-radius: 10rpx;
+  background: #f5f5dc;
+  margin-bottom: 20rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+.codeBtn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #f5f5dc;
+  color: #bbb;
+  width: 30%;
+  font-size: 26rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.changeInfoName input{
+  width: 100%;
+  height:100%;
+}
+.changeBtn{
+  width: 40%;
+  height: 100rpx;
+  background: #f5f5dc;
+  color: #000000;
+  border-radius: 50rpx;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  margin-left: -20%;
+  line-height: 100rpx;
+}

@@ -1,0 +1,53 @@
+<!-- 以下部分设计scroll-view的长度是800rpx，在该部分的下方留有一定的空间，后期可以用于广告的展示 -->
+<view class='magin'>
+
+  <view>
+    <scroll-view scroll-y style="height: 800rpx;">
+      <!-- 订单信息由一下view显示
+  time是用户使用时间
+  parkingId是车位编号
+  useTime是使用时长（在数据库处理时，需用parkingtime表中的endtime-startime）
+  licencePlate是车牌号 -->
+
+
+      <block wx:for="{{total}}">
+        <view class='head'>
+
+
+          <view>
+            <view class='time'>{{item.licenceplate}}</view>
+            <view class='content'>
+              <view>行驶证号:{{item.cardrivinglicenseid}}</view>
+              <view>{{item.defaultcar}}</view>
+            </view>
+          </view>
+
+          <view hidden='{{conceal}}'>
+            <view wx:if="{{item.defaultcar == '默认'}}">
+              <image src="../../../../images/star_target.png" class='images' data-idx='{{index}}' data-val='{{item.caridentification}}'></image>
+              <image src="../../../../images/delete.png" class='images' bindtap='delete' data-idx='{{index}}' data-val='{{item.caridentification}}'></image>
+            </view>
+
+
+            <view wx:else>
+              <image src="../../../../images/star.png" class='images' bindtap='default' data-idx='{{index}}' data-val='{{item.caridentification}}'></image>
+              <image src="../../../../images/delete.png" class='images' bindtap='delete' data-idx='{{index}}' data-val='{{item.caridentification}}'></image>
+            </view>
+          </view>
+
+        </view>
+      </block>
+
+    </scroll-view>
+  </view>
+
+
+
+  <button bindtap='manage' hidden='{{conceal2}}'>管理</button>
+  <button bindtap='manage2' hidden='{{conceal}}'>完成</button>
+
+    <view>
+      <button type="primary" bindtap='goaddcar'>添加爱车</button>
+    </view>
+
+</view>

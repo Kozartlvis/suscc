@@ -1,0 +1,54 @@
+<!-- index.wxml -->
+<view class='index'>
+  <image src='../../../images/index.png' style='width:100%;height:400rpx;'></image>
+  <view class="container">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        获取用户信息
+      </button>
+      <block wx:else>
+        <view class='head'>
+          <view>
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+          </view>
+          <view class="userName">
+            <text class="userinfo-nickname" style='color:black;'>{{userInfo.nickName}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+<view style="height:200rpx"></view>
+
+
+<view class='viewcss'>
+
+  <navigator url="myCar/myCar">
+    <view class="row">
+      <image src='../../../images/myCar.png' class='imagecss'></image>
+      <view class='content'>
+        <text>我的爱车</text>
+      </view>
+    </view>
+  </navigator>
+
+  <navigator url="myOrder/myOrder">
+    <view class="row">
+      <image src='../../../images/myOrder.png' class='imagecss'></image>
+      <view class='content'>
+        <text>我的订单</text>
+      </view>
+    </view>
+  </navigator>
+
+    <navigator url="zhuce/zhuce" >
+    <view class="row" hidden="{{flag}}" >
+      <image src='../../../images/phone.png' class='imagecss'></image>
+      <view class='content'>
+        <text>手机号</text>
+      </view>
+    </view>
+  </navigator>
+
+</view>

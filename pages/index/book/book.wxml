@@ -1,0 +1,17 @@
+<!--pages/index/book/book.wxml-->
+
+<view class='location2'>
+<view class='location'>
+<text>您正在预定{{msg1}}车位</text>
+<text>目前小区车位{{msg2}}</text>
+<text>预定后，请在15分钟内到达预定停车场！</text>
+</view>
+</view>
+
+<view class='location3'>
+<text>{{msg3}}</text>
+</view>
+
+<view>
+<button bindtap='book' class='button'><text style='color:white'>预定</text></button>
+</view>

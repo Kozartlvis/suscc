@@ -1,0 +1,51 @@
+<!--pages/index/used/used.wxml-->
+<view>
+
+<view class='location'>
+<text></text>
+</view>
+
+<text>\n</text>
+
+<view class="weui-media-box_appmsg">
+
+<view class="weui-media-box__hd_in-appmsg">
+ <image class="weui-media-box__thumb" src="/images/myOrder.png"></image>
+</view>
+
+<view class="weui-media-box__bd">
+
+<view class="weui-media-box__desc">
+  <text>正在使用:</text>
+</view>
+<view class="weui-media-box__desc2">
+  <text>{{msg1}}车位</text>
+</view>
+</view>
+</view>
+<view class="weui-media-box_appmsg">
+
+<view class="weui-media-box__hd_in-appmsg">
+ <image class="weui-media-box__thumb" src="/images/myOrder.png"></image>
+</view>
+
+<view class="weui-media-box__bd">
+
+<view class="weui-media-box__desc">
+  <text>使用时长:</text>
+</view>
+<view class="weui-media-box__title">
+  <text>{{ddd2}}天{{hhh2}}:{{mmm2}}:{{sss2}}</text>
+</view>
+</view>
+</view>
+
+<canvas class='canvas' style="width:{{code_w}}px; height:{{code_w}}px;" canvas-id='canvas' bindlongtap='save'></canvas>
+
+
+<view class='location'>
+<button bindtap='renting'>归还车位</button>
+
+</view>
+
+</view>

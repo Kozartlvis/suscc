@@ -1,0 +1,27 @@
+<!--pages/index/map/map.wxml-->
+<map 
+  id="map"
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
+  scale="17"
+  markers="{{markers}}"
+  bindmarkertap="markertap"
+  show-location
+  style="width: 100%; height: 100%;">
+  <cover-view class="btn_myloaction"bindtap='getLocation'>
+      <cover-image class="img_mylocation" src="/images/mylocation.png" />
+    </cover-view>
+  <cover-view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+   <cover-view class="modals-cancel" bindtap="hideModal">
+    </cover-view>
+   <cover-view class="bottom-dialog-body bottom-pos" animation="{{animationData}}">
+    <cover-view> 停车点名称：{{parkname}}</cover-view>
+    <cover-view> 收费情况：{{parkprice}}元/小时</cover-view>
+    <cover-view> 剩余车位：{{parkremain}}个</cover-view>
+    <cover-view class="btnview"> 
+      <button class="btnindex" bindtap="btnbook">预定普通车位</button>
+      <button class="btnindex" bindtap="btnnavigate">导航</button>
+      </cover-view>
+    </cover-view>
+  </cover-view>
+  </map>

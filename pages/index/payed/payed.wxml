@@ -1,0 +1,45 @@
+<!--pages/index/payed/payed.wxml-->
+<view class='location'>
+<text>{{msg3}}小区</text>
+</view>
+
+<text>\n</text>
+<view class="weui-media-box_appmsg">
+
+<view class="weui-media-box__hd_in-appmsg">
+ <image class="weui-media-box__thumb" src="/images/myOrder.png"></image>
+</view>
+
+<view class="weui-media-box__bd">
+
+<view class="weui-media-box__desc">
+  <text>距离离开车位还有:</text>
+</view>
+<view class="weui-media-box__desc2">
+  <text>{{mmm1}}:{{sss1}}</text>
+</view>
+</view>
+</view>
+<view class="weui-media-box_appmsg">
+
+<view class="weui-media-box__hd_in-appmsg">
+ <image class="weui-media-box__thumb" src="/images/myOrder.png"></image>
+</view>
+
+<view class="weui-media-box__bd">
+
+<view class="weui-media-box__desc">
+  <text>距离离开还有：</text>
+</view>
+<view class="weui-media-box__title">
+  <text>{{mmm2}}:{{sss2}}</text>
+</view>
+</view>
+</view>
+
+<view class='location'>
+<text>{{msg4}}</text>
+</view>
+
+<canvas class='canvas' style="width:{{code_w}}px; height:{{code_w}}px;" canvas-id='canvas' bindlongtap='save'></canvas>
+

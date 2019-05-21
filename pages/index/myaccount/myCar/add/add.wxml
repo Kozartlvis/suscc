@@ -1,0 +1,49 @@
+<form bindsubmit='add'>
+
+  <view>车牌号
+
+
+
+
+    <view class="hide">
+
+
+      <!-- 车牌 -->
+      <view class='carDrivingLicenseId' bindtap='keyboard_display'>{{carDrivingLicenseId}}</view>
+      <view class='keyboard' catchtap='stoppropagation'>
+        <!-- 省键盘 -->
+        <view class="provinces" hidden='{{hiddenPro}}'>
+          <view class="pro-li fl" wx:for="{{provinceArr}}" catchtap='proTap' data-province="{{item}}">{{item}}</view>
+        </view>
+        <!-- 号码键盘	 -->
+        <view class="keyNums" hidden='{{hiddenStr}}'>
+          <view class="pro-li fl" wx:for="{{strArr}}" catchtap='strTap' data-str="{{item}}">{{item}}</view>
+          <view class="bot fl">
+            <view class='kb-icon kb-hide fl pro-li' catchtap='backKeyboard'>返回</view>
+            <view class='kb-icon kb-hide fl pro-li' catchtap='backSpace'>删除</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+
+  </view>
+
+  <view hidden='true'>
+    <input name="carDrivingLicenseId" placeholder="请在此填写{{carDrivingLicenseId}}" />
+  </view>
+  
+  <view bindtap='keyboard_conceal'>
+    <view>行驶证号
+      <input name="licencePlate" placeholder="请在此填写{{licencePlate}}" />
+    </view>
+
+    <view>默认车辆
+      <switch name="defaultCar" />
+    </view>
+
+    <button form-type='submit'>添加</button>
+  </view>
+
+</form>

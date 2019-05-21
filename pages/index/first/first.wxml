@@ -1,0 +1,28 @@
+<!--pages/index/first/first.wxml-->
+<!--顶部导航条-->  
+<view class="navbar">  
+   <image bindtap="bindAvatorTap" class="useravatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
+   <image bindtap="bindSearchTap" class="useravatar" src="/images/search.png" mode="aspectFit"></image>
+</view> 
+<scroll-view class="scroll"
+    scroll-y
+    bindscrolltoupper="upper"
+    bindscrolltolower="lower"
+    scroll-into-view="{{toView}}"
+    scroll-top="{{scrollTop}}"
+  >
+  <view  wx:for="{{array}}" wx:key="id" >
+  <swiper indicator-dots="{{indicatorDots}}" 
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindtap="swipertap" circular="true" data-id="{{item.id}}"class='swiper-item'   >
+       <block wx:for="{{item.imgUrls}}" wx:key="*this" >  
+        <swiper-item >
+            <image src="{{item}}"  mode='widthFix' style='width:100%; overflow:show;'  height='150px'/> 
+        </swiper-item> 
+      </block> 
+  </swiper> 
+  <view class='title' >{{array[index].title}}</view>
+  
+  </view>
+   
+</scroll-view>
