@@ -23,7 +23,7 @@ Page({
   onLoad: function (options) {
     var that = this;
     wx.request({
-      url: 'https://www.51gxcw.cn/user/mycar/',
+      url: 'https://www.kozartlvis.com/competition/user/mycar/',
       method: "GET",
       header: {
         "content-type": 'application/json'
@@ -101,7 +101,7 @@ Page({
     });
 
     wx.request({
-      url: 'https://www.51gxcw.cn/user/delcar/',
+      url: 'https://www.kozartlvis.com/competition/user/delcar/',
       method: "POST",
 
       header: {
@@ -136,7 +136,7 @@ Page({
 
 
     wx.request({
-      url: 'https://www.51gxcw.cn/user/defaultcar/',
+      url: 'https://www.kozartlvis.com/competition/user/defaultcar/',
       method: "POST",
 
       header: {

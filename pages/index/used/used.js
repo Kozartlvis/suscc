@@ -107,7 +107,7 @@ Page({
   onLoad: function (options) {
     var that = this;
     wx.request({
-      url: 'https://www.51gxcw.cn/user/used/',
+      url: 'https://www.kozartlvis.com/competition/user/used/',
       method: "GET",
       header: {
         "content-type": "application/json"
@@ -195,7 +195,7 @@ Page({
   renting: function () {
     console.log(this.data.ordernumber)
     wx.request({
-      url: 'https://www.51gxcw.cn/user/returnpark/',
+      url: 'https://www.kozartlvis.com/competition/user/returnpark/',
       data:
       {
         ordernumber: this.data.ordernumber,

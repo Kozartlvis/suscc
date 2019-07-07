@@ -131,7 +131,7 @@ Page({
       correctLevel: QRCode.CorrectLevel.H,
     });
     wx.request({
-      url: 'https://www.51gxcw.cn/user/paid/',
+      url: 'https://www.kozartlvis.com/competition/user/paid/',
       data:
       {
         userid:app.globalData.userid

@@ -36,7 +36,7 @@ Page({
     //   })
     // }
     wx.request({
-      url: 'https://www.51gxcw.cn/user/page/',
+      url: 'https://www.kozartlvis.com/competition/user/page/',
       method: 'GET',
       header: {
         'content-type': 'application/json'
@@ -69,7 +69,7 @@ Page({
         })
       } else {
         wx.request({
-          url: 'https://www.51gxcw.cn/user/ordered/',
+          url: 'https://www.kozartlvis.com/competition/user/ordered/',
           method: "GET",
           header: {
             "content-type": "application/json"
@@ -100,7 +100,7 @@ Page({
         })
       } else {
       wx.request({
-        url: 'https://www.51gxcw.cn/user/used/',
+        url: 'https://www.kozartlvis.com/competition/user/used/',
         method: "GET",
         header: {
           "content-type": "application/json"
@@ -133,7 +133,7 @@ Page({
         })
       } else {
       wx.request({
-        url: 'https://www.51gxcw.cn/user/paid/',
+        url: 'https://www.kozartlvis.com/competition/user/paid/',
         method: "GET",
         header: {
           "content-type": "application/json"
@@ -189,7 +189,7 @@ Page({
     // })
 
     wx.request({
-      url: 'https://www.51gxcw.cn/user/page/',
+      url: 'https://www.kozartlvis.com/competition/user/page/',
       method: 'GET',
       header: {
         'content-type': 'application/json'

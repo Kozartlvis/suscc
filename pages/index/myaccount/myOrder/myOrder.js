@@ -49,7 +49,7 @@ Page({
 
     var that = this;
     wx.request({
-      url: 'https://www.51gxcw.cn/user/orderlist/',
+      url: 'https://www.kozartlvis.com/competition/user/orderlist/',
       method: "GET",
 
       header: {

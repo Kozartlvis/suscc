@@ -9,7 +9,7 @@ App({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         wx.request({
-          url: 'https://www.51gxcw.cn/user/getid/', //接口地址
+          url: 'https://www.kozartlvis.com/competition/user/getid/', //接口地址
           data: { code: res.code },
           header: {
             'content-type': 'application/json' //默认值

@@ -76,7 +76,7 @@ Page({
     } else {
       console.log("手机号" + this.data.phone)
       wx.request({
-        url: 'https://www.51gxcw.cn/user/sms_deliver/',
+        url: 'https://www.kozartlvis.com/competition/user/sms_deliver/',
         method: "GET",
 
         header: {
@@ -157,7 +157,7 @@ Page({
       console.log(this.data.phone);
       console.log(this.data.code);
       wx.request({
-        url: 'https://www.51gxcw.cn/user/code1/',
+        url: 'https://www.kozartlvis.com/competition/user/code1/',
         method: "GET",
 
         header: {

@@ -72,7 +72,7 @@ Page({
     var that = this
     console.log(this.data.orderid)
     wx.request({
-      url: 'https://www.51gxcw.cn/user/startorder/',
+      url: 'https://www.kozartlvis.com/competition/user/startorder/',
       method: "POST",
       header: {
         "Content-Type": "application/x-www-form-urlencoded"
@@ -124,7 +124,7 @@ Page({
 
   indoor:function(){
     wx.request({
-      url: 'https://www.51gxcw.cn/user/used/',
+      url: 'https://www.kozartlvis.com/competition/user/used/',
       method: "GET",
       header: {
         "content-type": "application/json"
@@ -167,7 +167,7 @@ Page({
       correctLevel: QRCode.CorrectLevel.H,
     });
     wx.request({
-      url: 'https://www.51gxcw.cn/user/orderedinfo/',
+      url: 'https://www.kozartlvis.com/competition/user/orderedinfo/',
       method: "GET",
       header: {
         "content-type": "application/json"

@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/index/first/first",
     "pages/index/map/map",
@@ -7,17 +7,18 @@
     "pages/index/ordered/ordered",
     "pages/index/payed/payed",
     "pages/index/search/search",
-    "pages/index/used/used" ,
+    "pages/index/used/used",
     "pages/index/myaccount/myaccount",
-    "pages/index/myaccount/zhuce/zhuce",  
+    "pages/index/myaccount/zhuce/zhuce",
     "pages/index/myaccount/myCar/myCar",
     "pages/index/myaccount/myOrder/myOrder",
-    "pages/index/myaccount/myCar/add/add"          
+    "pages/index/myaccount/myCar/add/add"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
 }

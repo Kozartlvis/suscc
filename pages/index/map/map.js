@@ -34,7 +34,7 @@ Page({
     } 
     this.mapCtx = wx.createMapContext('map');
     wx.request({
-      url: 'https://www.51gxcw.cn/user/search/', //接口地址
+      url: 'https://www.kozartlvis.com/competition/user/search/', //接口地址
       header: {
         //'content-type': 'application/x-www-form-urlencoded' //默认值
       },
@@ -92,7 +92,7 @@ Page({
     console.log(this.data.markers)
     // app.globalData.markerid=e.markerId;
     wx.request({
-      url: 'https://www.51gxcw.cn/user/markerinfo/', //接口地址
+      url: 'https://www.kozartlvis.com/competition/user/markerinfo/', //接口地址
       header: {
         'content-type': 'application/json' //默认值
       },

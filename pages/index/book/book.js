@@ -28,7 +28,7 @@ Page({
   book: function () {
     var that = this;
     wx.request({
-      url: 'https://www.51gxcw.cn/user/order_normal/',
+      url: 'https://www.kozartlvis.com/competition/user/order_normal/',
       data:
       {
         propertyid : that.data.propertyid,
@@ -91,7 +91,7 @@ Page({
       propertyid: options.propertyid
     })
     wx.request({
-      url: 'https://www.51gxcw.cn/user/book_normal/',
+      url: 'https://www.kozartlvis.com/competition/user/book_normal/',
       data:
       {
         propertyid: that.data.propertyid

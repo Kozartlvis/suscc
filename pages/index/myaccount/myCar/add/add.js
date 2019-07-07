@@ -138,7 +138,7 @@ Page({
     console.log(e)
     let carDrivingLicenseId = this.data.carDrivingLicenseId;
     wx.request({
-      url: 'https://www.51gxcw.cn/user/addcar/',
+      url: 'https://www.kozartlvis.com/competition/user/addcar/',
       method: "POST",
 
       header: {
